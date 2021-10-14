@@ -1,13 +1,3 @@
-<div>
-  <h1>My Goals</h1>
-  <hr>
-  <ul>
-    <li *ngFor='let goal of goals'>
-      {{goal.name}}
-    </li>
-  </ul>
-    <p *ngIf='goals.length > 5'>Your goals are too many</p>
-
-</div>
-
-<!-- <router-outlet></router-outlet> -->
+<app-navbar></app-navbar>
+<!-- anything below this is routed using the route-outlet in Angular. Meaning, they can change with out affecting the top bit. -->
+<router-outlet></router-outlet>
